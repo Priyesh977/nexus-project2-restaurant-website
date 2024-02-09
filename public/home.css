@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif ;
+}
+nav{
+    width: 100%;
+    background-color: white;
+   
+}
+ul ,.feature-section ,.category-section , .local-section{
+    width: full;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 10px 20px;
+    background-color: white;
+    
+}
+nav ul .nav-list{
+    box-shadow: 0 0 0.8px 0 black;
+}
+.nav-list{
+    display: flex;
+    padding: 2px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-side ul{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+.right-side ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.logo{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+}
+body{
+    background-color: white;;
+}
+
+.hamburger div{
+    width: 20px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: black;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .right-side{
+        display: none;
+        
+    }
+    nav{
+        padding: 10px 15px;
+    }
+    .lower-side{
+        display: grid;
+        grid-column: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .lower-side .items{
+        width: 260px;
+        height: 200px;
+        min-width: 100px;
+    }
+   
+  }
+
+  @media only screen and (min-width: 600px) {
+   
+    .hamburger{
+        display: none;
+    }
+    .lower-side{
+       display: flex;
+       align-items: center;
+       overflow-x: auto;
+       scroll-behavior: smooth;
+    
+    }
+    .features{
+        min-width: 400px;
+    }
+    .lower-side::-webkit-scrollbar {
+        display: none;
+      }
+
+   
+  }
+   .lower-side img {
+    width: 400px;
+    height: 250px;
+    margin: 20px 10px;
+    border-radius: 15px;
+     }
+  
+section{
+    background-color: transparent;
+
+}
+.items{
+    display: flex;
+    overflow-x: auto;
+
+}
+.item{
+    width: 200px;
+    margin: 15px ;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #c3c2c2;
+}
+
+.items::-webkit-scrollbar {
+    display: none;
+  }
+
+  .items img{
+    width: 220px;
+  }
+  #footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
